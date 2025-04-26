@@ -54,32 +54,44 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa);
 }
 
-.hero-content h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.hero-content p {
-  font-size: 20px;
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0072b1;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #005b8e;
+.intro-text {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .about, .projects {
