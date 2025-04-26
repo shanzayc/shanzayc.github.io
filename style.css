@@ -1,44 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: #ffffff;
+  background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa);
   color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.top {
+header {
   text-align: center;
-  margin-top: 50px;
-  flex-grow: 1;
+  padding: 30px 20px 10px 20px;
 }
 
-.top h1 {
+header h1 {
   font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.top h2 {
-  font-size: 20px;
-  color: #777;
-  margin-bottom: 40px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-.profile-photo {
-  width: 200px;
-  height: 200px;
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0072b1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 50px;
+  gap: 50px;
+}
+
+.photo img {
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.intro h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #666;
 }
 
 footer {
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
-  color: #777;
   background-color: #f8f8f8;
   margin-top: auto;
 }
