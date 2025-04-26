@@ -4,13 +4,14 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Cinzel', serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa);
   color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 
 
 header {
