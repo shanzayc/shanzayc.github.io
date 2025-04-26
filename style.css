@@ -12,25 +12,27 @@ body {
   flex-direction: column;
 }
 
-
-
 header {
   text-align: center;
   padding: 30px 20px 10px 20px;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* slight shadow */
 }
 
 h1 {
   font-family: 'Cinzel', serif;
-  font-size: 60px; /* make it nice and bold */
+  font-size: 60px;
   text-align: center;
-  margin-top: 30px;
-  letter-spacing: 2px; /* optional: spacing out letters for an elegant look */
+  margin-top: 10px;
+  letter-spacing: 2px;
 }
-
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 10px 0 0 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -41,10 +43,12 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 nav ul li a:hover {
   color: #0072b1;
+  text-decoration: underline;
 }
 
 .hero {
@@ -54,6 +58,7 @@ nav ul li a:hover {
   flex: 1;
   padding: 50px;
   gap: 50px;
+  flex-wrap: wrap; /* mobile responsive */
 }
 
 .photo img {
@@ -78,6 +83,7 @@ nav ul li a:hover {
 .intro p {
   font-size: 18px;
   color: #666;
+  max-width: 400px;
 }
 
 footer {
@@ -93,6 +99,7 @@ footer {
   text-decoration: none;
   color: #0072b1;
   font-weight: bold;
+  transition: text-decoration 0.3s;
 }
 
 .footer-links a:hover {
