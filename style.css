@@ -17,7 +17,7 @@ header {
   padding: 20px;
   position: sticky;
   top: 0;
-  background: white;
+  background: #595F72;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
