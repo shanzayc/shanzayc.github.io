@@ -1,11 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Shanzay Chaudhry</title>
   
+  <!-- Google Fonts: Cinzel -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Your CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,22 +31,31 @@
   </header>
 
   <main class="hero" id="home">
-    <div class="photo">
+    <div class="photo" data-aos="fade-right">
       <img src="homepic.jpg" alt="Photo of Shanzay" class="profile-photo">
     </div>
-    <div class="intro">
+    <div class="intro" data-aos="fade-left">
       <h2>Hi, I'm Shanzay! 👩‍💻</h2>
       <p>I'm a Computer Science student at Carleton University passionate about Human-Computer Interaction, UX Design, and Machine Learning!</p>
     </div>
   </main>
 
-  <footer id="contact">
+  <footer id="contact" data-aos="fade-up">
     <p>© 2025 Shanzay Chaudhry</p>
     <div class="footer-links">
       <a href="https://linkedin.com/in/shanzaychaudhry" target="_blank">LinkedIn</a>
       <a href="https://github.com/shanzayc" target="_blank">GitHub</a>
     </div>
   </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation time in ms
+      once: true      // animate only once when scrolling
+    });
+  </script>
 
 </body>
 </html>
